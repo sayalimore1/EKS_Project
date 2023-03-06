@@ -9,4 +9,10 @@ module "EKS_vpc" {
   Owner = var.Owner
   Purpose = var.Purpose
 }
-
+module "EKS_igw" {
+  source      = "../modules/internetgw"
+  vpc_id      = "${module.EKS_vpc.vpc_id}"
+  Name_IG  = var.Name_IG
+  Owner = var.Owner
+  Purpose = var.Purpose
+}
