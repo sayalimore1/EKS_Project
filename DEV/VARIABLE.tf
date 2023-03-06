@@ -7,11 +7,11 @@ variable "Name_VPC" {
 variable "Owner" {
   type = string
   description = "Value used for tagging Owner"
-  default = "Sayali"
+  default = "Sayali-NEW"
 }
 
 variable "Purpose" {
   type = string
   description = "Purpose of the infrastructure creation"
-  default = "EKSProject"
+  default = "EKSProject-NEW"
 }
