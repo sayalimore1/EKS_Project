@@ -4,9 +4,9 @@ variable "vpc_cidr" {
 variable "Name_VPC" {
  default = "EKS_vpc"
 }
-variable "Name_IG" {
- default = "EKS_internet gateway"
-}
+# variable "Name_IG" {
+#  default = "EKS_internet gateway"
+# }
 variable "Owner" {
   type = string
   description = "Value used for tagging Owner"
